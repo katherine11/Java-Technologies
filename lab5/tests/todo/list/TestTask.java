@@ -9,9 +9,10 @@ import org.junit.Test;
 public class TestTask {
 
 	@Test
-	void testToString(){
+	public void testToString(){
 		Task task = new Task("buy cake", TaskStatus.IN_PROCESS, (byte)3 , LocalDate.of(2017, 1, 1));
-		String expected = "buy cake,IN PROCESS,3,2017-01-01";
+		String expected = "buy cake,IN_PROCESS,3,2017-01-01";
+	
 		assertEquals(expected, task.toString());
 	}
 }

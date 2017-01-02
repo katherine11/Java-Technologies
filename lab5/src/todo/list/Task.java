@@ -10,6 +10,10 @@ public class Task implements Comparable<Task>{
 	private byte priority;
 	private LocalDate deadline;
 	
+//	public Task(){
+//		
+//	}
+	
 	public Task(String name,TaskStatus status, byte priority, LocalDate deadline) {
 		
 		if(name != null){
